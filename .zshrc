@@ -70,6 +70,12 @@ source $ZSH/oh-my-zsh.sh
 export GEM_HOME=~/.gems
 export PATH=$PATH:~/.gems/bin
 
+#Add rbenv to path
+export PATH=$PATH:$HOME/.rbenv/bin
+
+#rbenv init
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
