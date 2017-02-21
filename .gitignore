@@ -1,0 +1,9 @@
+# Ignore all folders
+
+#*/*
+#*.*
+
+#!.tmux.conf
+#!.zshrc
+#!.vimrc
+#!.bashrc
