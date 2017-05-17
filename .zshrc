@@ -39,7 +39,7 @@ ZSH_THEME="gallois"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+ COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -67,6 +67,10 @@ source $ZSH/oh-my-zsh.sh
 . /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
 
 # User configuration
+#################################
+
+
+
 export GEM_HOME=~/.gems
 export PATH=$PATH:~/.gems/bin
 
@@ -75,6 +79,10 @@ export PATH=$PATH:$HOME/.rbenv/bin
 
 #rbenv init
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -100,5 +108,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="mate ~/.zshrc"
+alias ohmyzsh="mate ~/.oh-my-zsh"
